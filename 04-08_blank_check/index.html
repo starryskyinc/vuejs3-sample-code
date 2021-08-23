@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue.js 3</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div id="app">
+    <h2>TODO List</h2>
+    <form v-on:submit.prevent>
+      <input type="text" v-model="newItem">
+      <button v-on:click="addItem">Add</button>
+    </form>
+    <pre>{{ $data }}</pre>
+  </div>
+  <script src="https://unpkg.com/vue@3.1.5"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
