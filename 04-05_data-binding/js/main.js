@@ -1,15 +1,10 @@
 const app = Vue.createApp({
   data: () => ({
-    newItem: '',
-    todos: []
+    newItem: ''
   }),
   methods: {
     addItem: function(event) {
       console.log('Clicked!')
-      let todo = {
-        item: this.newItem
-      }
-      this.todos.push(todo)
     }
   }
 })
