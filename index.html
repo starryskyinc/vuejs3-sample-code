@@ -9,7 +9,13 @@
 </head>
 <body>
   <div id="app">
-    <p v-cloak>{{ message }}</p>
+    <h2>Mustache</h2>
+    <p>{{ message }}</p>
+    <p>"{{ message }}"</p>
+
+    <h2>v-text</h2>
+    <p v-text="message"></p>
+
   </div>
   <script src="https://unpkg.com/vue@3.1.5"></script>
   <script src="js/main.js"></script>
