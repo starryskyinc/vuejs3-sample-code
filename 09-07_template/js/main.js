@@ -25,7 +25,7 @@ const app = Vue.createApp({
       axios.get('https://qiita.com/api/v2/items', { params })
            .then(function(response){
              // console.log(response)
-             vm.items = reponse.data
+             vm.items = response.data
            })
            .catch(function(error){
              vm.message = 'Error!' + error
