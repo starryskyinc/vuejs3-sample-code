@@ -1,6 +1,6 @@
 const app = Vue.createApp({
   data: () => ({
-    colors: []
+    color: ''
   }),
 })
 app.mount('#app')
