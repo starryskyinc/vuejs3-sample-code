@@ -9,13 +9,13 @@
 </head>
 <body>
   <div id="app">
-    <select v-model="selected">
-      <option disabled value="">Please select one</option>
-      <option>Red</option>
-      <option>Green</option>
-      <option>Blue</option>
-    </select>
-    <p>{{ selected }}</p>
+    <input type="radio" id="red" value="Red" v-model="color">
+    <label for="red">Red</label>
+    <input type="radio" id="green" value="Green" v-model="color">
+    <label for="red">Green</label>
+    <input type="radio" id="blue" value="Blue" v-model="color">
+    <label for="red">Blue</label>
+    <p>{{ color }}</p>
   </div>
   <script src="https://unpkg.com/vue@3.1.5"></script>
   <script src="js/main.js"></script>
