@@ -9,9 +9,8 @@
 </head>
 <body>
   <div id="app">
-    <p>{{ message }}</p>
-    <!-- <textarea>{{ message }}</textarea> -->
-    <textarea v-model="message"></textarea>
+    <label for="checkbox">{{ checked }}</label>
+    <input type="checkbox" id="checkbox" v-model="checked">
   </div>
   <script src="https://unpkg.com/vue@3.1.5"></script>
   <script src="js/main.js"></script>
